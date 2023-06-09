@@ -1,7 +1,7 @@
 SAMPLE_RATE = 16_000
 
 data = dict(
-    root='wake_words/data',
+    root='data',
     pos_prefix='pos_all',
     neg_prefix='neg',
     noise_prefix='noise',
@@ -22,5 +22,6 @@ trainer = dict(
     epochs=10,
     lr=1e-3,
     weight_decay=1e-3,
-    ckpt_dir='wake_words/checkpoints/'
+    ckpt_dir='wake_words/checkpoints/',
+    device='cuda:0'
 )

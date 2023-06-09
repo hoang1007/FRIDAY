@@ -35,6 +35,7 @@ def main(args):
         "confusion_matrix": BinaryConfusionMatrix(),
     }
 
+    model.to(config.trainer.get('device', 'cpu'))
     model.eval()
     for batch_idx, batch in enumerate(data_constructor.val_dataloader()):
         waveforms, labels = batch
