@@ -1,0 +1,4 @@
+torch==2.0.1
+torchaudio==2.0.2
+torchmetrics==0.11.4
+torch-audiomentations==0.11.0
